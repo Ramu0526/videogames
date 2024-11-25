@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <link rel="stylesheet" href="clasico.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="player-section">
+            <h2>Tu elección</h2>
+            <div class="choices">
+                <div class="choice" onclick="playerChoose('piedra')">
+                    <img src="https://materialoteca.azc.uam.mx/media/djcatalog2/images/item/39/mineral-piedra-pomez_f.png" alt="Piedra">
+                </div>
+                <div class="choice" onclick="playerChoose('papel')">
+                    <img src="data:image/jpeg;base64,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" alt="Papel">
+                </div>
+                <div class="choice" onclick="playerChoose('tijeras')">
+                    <img src="https://hogaruniversal.vtexassets.com/arquivos/ids/160606-800-auto?v=637269884909200000&width=800&height=auto&aspect=true" alt="Tijeras">
+                </div>
+            </div>
+        </div>
+        <div class="result-section">
+            <h2>Resultado</h2>
+            <p id="result">Haz tu elección</p>
+        </div>
+        <div class="ia-section">
+            <h2>Elección de la IA</h2>
+            <div id="ia-choice" class="choice">
+                <img src="https://www.stackscale.com/wp-content/uploads/2023/02/Inteligencia-Artificial-Stackscale.jpg" alt="Esperando">
+            </div>
+        </div>
+    </div>
+    <script src="clasico.js"></script>
+</body>
+</html>
